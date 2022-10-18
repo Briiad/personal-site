@@ -14,12 +14,10 @@ export const Projects = () => {
 
 
   return (
-    <section className='w-full h-screen'>
-      <div>
+    <section className='w-full h-screen p-36 bg-main-500'>
+      <div className='grid grid-cols-3 gap-4'>
         {projects && projects.map((project) => (
-          <span key={project.id}>
-            {project.title}
-          </span>
+          <ProjectCard key={project.id} project={project} />
         ))}
       </div>
     </section>

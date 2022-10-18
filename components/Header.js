@@ -4,40 +4,45 @@ import Typewriter from 'typewriter-effect'
 const Header = () => {
 
   return (
-    <div className='w-full h-screen grid grid-cols-5'>
+    <div className='w-full h-screen grid grid-cols-6'>
       <div className='col-span-3 flex flex-col'>
-        <div className='w-full h-5/6 bg-primary flex flex-col justify-end p-12 text-secondary'>
-          <h1 className='text-5xl '>
-            <Typewriter
-              options={{
-                autoStart: true,
-                loop: true,
-              }}
-              onInit={(typewriter) => {
-                typewriter
-                  .typeString('Frontend Developer.')
-                  .pauseFor(2000)
-                  .deleteChars(10)
-                  .typeString('Engineer.')
-                  .pauseFor(2000)
-                  .start()
-              }}
-            />
+        <div className='w-full h-full flex flex-col justify-center p-12 text-primary text-shadow-css'>
+          <h1 className='text-9xl'>
+            FRONT-
           </h1>
-          <p className='w-2/3 row-span-1 text-md my-6'>I like to build frontend products that revolves around amazing user interfaces.</p>
+          <h1 className='text-9xl'>END</h1>
+          <h1 className='text-8xl'>ENGINEER</h1>
         </div>
       </div>
 
-      <div className='w-full h-screen col-span-2 flex flex-col'>
-        <div className='h-3/4 bg-secondary'></div>
-        <div>
-          <div className='p-8 text-primary'>
-            <div className='grid grid-rows-2'>
-              <div className='row-span-2 grid grid-cols-2 justify-items-center text-sm'>
-                <p className='w-3/4 col-span-1 '>Relies on great techs like NextJS, Tailwind, GraphQL, and other stuff to build my products.</p>
-                <p className='w-3/4 col-span-1 '>Greatly skilled on frontend engineering and enhancement.</p>
-              </div>
-            </div>
+      <div className='col-span-3 flex justify-center items-center p-24'>
+        <div className='w-full h-full border-2 border-main-100 rounded-lg p-8'>
+          <div className='text-main-100 text-sm font-courier-new'>
+            <Typewriter
+                options={{
+                  autoStart: true,
+                  loop: true,
+                }}
+                onInit={(typewriter) => {
+                  typewriter
+                    .typeString('var hello = "Hello Random Person!";')
+                    .typeString('<br>')
+                    .typeString('console.log(`hello + " welcome to my site!"`);')
+                    .typeString('<br></br>')
+                    .typeString('const arr = [];')
+                    .typeString('<br>')
+                    .typeString('const thing0 = "You see, im very interested in code and stuff.";')
+                    .typeString('<br>')
+                    .typeString('const thing1 = "And im pretty good at it too lol.";')
+                    .typeString('<br>')
+                    .typeString('arr.append(thing0);')
+                    .typeString('<br>')
+                    .typeString('arr.append(thing1);')
+                    .typeString('<br>')
+                    .pauseFor(2000)
+                    .start()
+                }}
+              />
           </div>
         </div>
       </div>

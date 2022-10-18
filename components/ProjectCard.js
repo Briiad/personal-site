@@ -1,8 +1,10 @@
 import React from 'react'
 
-const ProjectCard = () => {
+const ProjectCard = ({project}) => {
   return (
-    <div>this shit didnt work</div>
+    <div className='w-full h-full border border-secondary rounded-md p-4'>
+      <h2 className='text-lg font-semibold text-secondary'>{project.title}</h2>
+    </div>
   )
 }
 

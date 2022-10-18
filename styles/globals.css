@@ -45,3 +45,14 @@ h1 {
   font-style:normal;
 }
 
+.text-shadow-css{
+  text-shadow: 0.5rem 0.5rem  #00C9A7;
+}
+
+.text-shadow-span{
+  text-shadow: 0.25rem 0.25rem  #00C9A7;
+}
+
+.font-courier-new{
+  font-family: 'Courier New', Courier, monospace;
+}
