@@ -5,7 +5,7 @@ import { Header, About, Projects } from '../components'
 
 export default function Home() {
   return (
-    <div>
+    <div className='bg-main'>
       <Head>
         <title>Brian Aditya: Frontend Developer</title>
         <meta name="description" content="Brian Aditya Personal Website" />

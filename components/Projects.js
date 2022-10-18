@@ -1,10 +1,28 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 
-const Projects = () => {
+import { getProjects } from '../services'
+import ProjectCard from './ProjectCard'
+
+export const Projects = () => {
+
+  const [projects, setProjects] = useState([])
+
+  useEffect(() => {
+    getProjects()
+      .then((newProject) => setProjects(newProject))
+  }, [])
+
+
   return (
-    <div className='w-full h-screen'>
-      Projects
-    </div>
+    <section className='w-full h-screen'>
+      <div>
+        {projects && projects.map((project) => (
+          <span key={project.id}>
+            {project.title}
+          </span>
+        ))}
+      </div>
+    </section>
   )
 }
 

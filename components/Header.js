@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <div className='w-full h-screen grid grid-cols-5'>
       <div className='col-span-3 flex flex-col'>
-        <div className='w-full h-3/4 bg-primary flex flex-col justify-end p-12 text-secondary'>
+        <div className='w-full h-5/6 bg-primary flex flex-col justify-end p-12 text-secondary'>
           <h1 className='text-5xl '>
             <Typewriter
               options={{
@@ -29,7 +29,7 @@ const Header = () => {
       </div>
 
       <div className='w-full h-screen col-span-2 flex flex-col'>
-        <div className='h-1/2 bg-secondary'></div>
+        <div className='h-3/4 bg-secondary'></div>
         <div>
           <div className='p-8 text-primary'>
             <div className='grid grid-rows-2'>
