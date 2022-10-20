@@ -1,9 +1,23 @@
 import React from 'react'
+import * as Ai from 'react-icons/ai'
+import * as Fi from 'react-icons/fi'
 
 const ProjectCard = ({project}) => {
   return (
-    <div className='w-full h-full border border-secondary rounded-md p-4'>
-      <h2 className='text-lg font-semibold text-secondary'>{project.title}</h2>
+    <div className='w-80 h-80 flex flex-col justify-between bg-main-400 rounded-md p-4 overflow-hidden'>
+      <p className='h-1/5 text-secondary flex justify-between items-center'>
+        <Ai.AiFillFolderOpen className='inline-block text-4xl' />
+        <Fi.FiExternalLink className='inline-block text-xl' />
+      </p>
+      <div className='h-3/5 p-4'>
+        <h2 className='truncate overflow-ellipsis text-sm font-bold text-secondary uppercase mb-4'>{project.title}</h2>
+        <p className='text-xs text-secondary opacity-75'>{project.excerpt}</p>
+      </div>
+      <p className='h-1/5 flex items-end text-xs text-primary'>
+        {project.tech.map((proj) => (
+          <span className='border border-primary rounded-xl px-1 py-1 mr-2'>{proj}</span>
+        ))}
+      </p>
     </div>
   )
 }

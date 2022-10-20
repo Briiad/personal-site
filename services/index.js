@@ -7,6 +7,7 @@ export const getProjects = async () => {
     query GetProjects {
       projects {
         id
+        excerpt
         slug
         tech
         title

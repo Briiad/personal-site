@@ -15,7 +15,7 @@ export const Projects = () => {
 
   return (
     <section className='w-full h-screen p-36 bg-main-500'>
-      <div className='grid grid-cols-3 gap-4'>
+      <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
         {projects && projects.map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}
