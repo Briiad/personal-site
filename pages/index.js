@@ -1,7 +1,7 @@
 import Head from 'next/head'
 
 // components
-import { Header, About, Projects } from '../components'
+import { Header, About, Projects, Contact, Footer } from '../components'
 
 export default function Home() {
   return (
@@ -20,6 +20,12 @@ export default function Home() {
 
       {/* Projects Section */}
       < Projects />
+
+      {/* Contact Section */}
+      <Contact />
+
+      {/* Footer Section */}
+      <Footer />
     </div>
   )
 }

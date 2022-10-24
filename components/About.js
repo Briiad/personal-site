@@ -11,7 +11,7 @@ const About = () => {
         <div className='w-full flex items-center justify-around text-primary p-8'>
           <div className='flex flex-col items-center justify-center rounded-full drop-shadow-lg'>
             <img src="pp.png" alt="avatar" className='w-48 h-48 rounded-full object-cover bg-primary' />
-            <h2 className='text-5xl my-8 font-semibold'>Hi, I'm <span className='text-shadow-span font-bold'>Brian.</span></h2>
+            <h2 className='text-5xl my-8'>Hi, I'm <span className='text-secondary font-semibold'>Brian</span>.</h2>
           </div>
           <p className='w-1/2 ml-12 text-md text-main-100 text-justify'>
             I started to learn frontend development when i was 15, learning basics like HTML and CSS. Fast forward 5 years later, I am now an Undergraduate Computer Engineering Student and still loves Frontend Development using new stuff like NextJS, React, Framer Motion, and other stuff!
