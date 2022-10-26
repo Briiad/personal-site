@@ -10,7 +10,7 @@ module.exports = {
         "primary": "#F700B5",
         "secondary": '#00C9A7',
         "main" : {
-          100: '#9e9e9e',
+          100: '#ffd4f4',
           400: '#1c1c1c',
           500: '#121212'
         }

@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import * as Ai from 'react-icons/ai'
 import * as Fi from 'react-icons/fi'
 
@@ -10,7 +11,11 @@ const ProjectCard = ({project}) => {
         <Fi.FiExternalLink className='inline-block text-xl text-main-100' />
       </p>
       <div className='h-3/5 p-4'>
-        <h2 className='truncate overflow-ellipsis text-sm font-bold text-primary uppercase mb-4'>{project.title}</h2>
+        <div className='truncate overflow-ellipsis text-sm font-bold text-primary uppercase mb-4'>
+          <Link href={`/post/${project.slug}`}>
+            {project.title}
+          </Link>
+      </div>
         <p className='text-xs text-main-100 opacity-75'>{project.excerpt}</p>
       </div>
       <p className='h-1/5 flex items-end text-xs text-primary'>
