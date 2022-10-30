@@ -20,7 +20,7 @@ const ProjectCard = ({project}) => {
       </div>
       <p className='h-1/5 flex items-end text-xs text-primary'>
         {project.tech.map((proj) => (
-          <span className='border border-primary rounded-xl px-1 py-1 mr-2'>{proj}</span>
+          <span key={proj} className='border border-primary rounded-xl px-1 py-1 mr-2'>{proj}</span>
         ))}
       </p>
     </div>

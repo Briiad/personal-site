@@ -1,7 +1,9 @@
 import React, {useState} from 'react'
 import Link from 'next/link'
-import {motion} from 'framer-motion'
+import {motion, AnimatePresence} from 'framer-motion'
 import * as Ai from 'react-icons/ai'
+
+import { openNav } from './animation/motion'
 
 import HamburgerNav from './HamburgerNav'
 
@@ -23,21 +25,23 @@ const Navbar = () => {
 
       <div className='col-span-2 flex justify-end items-center px-6'>
         <HamburgerNav toggle={() => setIsOpen(!isOpen)} isOpen={isOpen} />
-        {isOpen && 
-          <div className='absolute grid grid-rows-5 gap-2 top-2 h-96 p-8 w-1/4 bg-main-100 text-primary'>
-            <div className='row-span-1'></div>
-            <div className='row-span-3 flex flex-col justify-around'>
-              <p className=''>Projects</p>
-              <p className=''>Shelf</p>
-              <p className=''>Resume</p>
-            </div>
-            <div className='row-span-1 flex items-end'>
-              <p className=''><Ai.AiFillGithub /></p>
-              <p className=''><Ai.AiOutlineLinkedin/></p>
-              <p className=''><Ai.AiOutlineTwitter /></p>
-            </div>
-          </div>
-        }
+        <AnimatePresence>
+          {isOpen && 
+            <motion.div className='absolute grid grid-rows-5 gap-2 top-2 h-96 p-8 w-1/4 bg-main-300 text-primary' variants={openNav} initial="hidden" animate="visible" exit="exit">
+              <div className='row-span-1'></div>
+              <div className='row-span-3 text-sm'>
+                <p className=''>My Projects</p>
+                <p className='my-6'>My Shelf</p>
+                <p className=''>My Resume</p>
+              </div>
+              <div className='row-span-1 flex justify-around border-t-2 border-primary items-center text-2xl'>
+                <p className=''><Ai.AiFillGithub /></p>
+                <p className=''><Ai.AiOutlineLinkedin/></p>
+                <p className=''><Ai.AiOutlineTwitter /></p>
+              </div>
+            </motion.div>
+          }
+        </AnimatePresence>
       </div>
     </nav>
   )

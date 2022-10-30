@@ -8,3 +8,36 @@ export const idleSVG = {
     }
   }
 }
+
+export const openNav = {
+  visible: {
+    opacity: 1,
+    scale : 1 ,
+    x : 0,
+    y : 0,
+    transition:{
+      duration: 0.5,
+      ease: 'easeInOut',
+    }
+  },
+  hidden: {
+    opacity: 0,
+    scale : 0.5,
+    x : 100,
+    y : -100,
+    transition:{
+      duration: 0.5,
+      ease: 'easeInOut',
+    }
+  },
+  exit: {
+    opacity: 0,
+    scale : 0.5,
+    x : 100,
+    y : -100,
+    transition:{
+      duration: 0.5,
+      ease: 'easeInOut',
+    }
+  },
+}

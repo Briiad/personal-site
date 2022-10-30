@@ -1,50 +1,37 @@
 import React from 'react'
-import Typewriter from 'typewriter-effect'
+import {motion} from 'framer-motion'
+import * as Ai from 'react-icons/ai'
 
 const Header = () => {
-
+  
   return (
-    <div className='w-full h-screen grid grid-cols-6'>
-      <div className='col-span-3 flex flex-col'>
-        <div className='w-full h-full flex flex-col justify-center p-12 text-primary text-shadow-css'>
-          <h1 className='text-9xl'>
-            FRONT-
-          </h1>
-          <h1 className='text-9xl'>END</h1>
-          <h1 className='text-8xl'>ENGINEER</h1>
+    <div className='relative w-full h-screen p-12 grid grid-cols-6 '>
+      <div className='w-full h-full col-span-3 flex justify-center items-center '>
+        <div className='flex flex-col p-12 text-main-100 select-none'>
+          <h1 className='text-8xl'>I'm <span className='text-shadow-css'>Brian.</span></h1>
+          <h1 className='absolute top-20 text-9xl opacity-5 z-0 text-transparent bg-clip-text bg-gradient-image-pp'>Frontend <br /> Engineer</h1>
+          <p className='my-8 text-justify'>
+            I am a highly motivated and passionate Frontend Engineer and currently
+            focusing on highly interactive and responsive web applications. I also
+            loved to learn new stuff and always looking for new challenges.
+          </p>
+          <div className='flex items-center text-primary'>
+            <p className='mr-2'>Scoll for more</p>
+            <Ai.AiOutlineArrowDown />
+          </div>
         </div>
       </div>
 
-      <div className='col-span-3 flex justify-center items-center p-24'>
-        <div className='w-full h-full border-2 border-main-100 rounded-lg p-8'>
-          <div className='text-main-100 text-sm font-courier-new'>
-            <Typewriter
-                options={{
-                  autoStart: true,
-                  loop: true,
-                }}
-                onInit={(typewriter) => {
-                  typewriter
-                    .typeString('var hello = "Hello Random Person!";')
-                    .typeString('<br>')
-                    .typeString('console.log(`hello + " welcome to my site!"`);')
-                    .typeString('<br></br>')
-                    .typeString('const arr = [];')
-                    .typeString('<br>')
-                    .typeString('const thing0 = "You see, im very interested in code and stuff.";')
-                    .typeString('<br>')
-                    .typeString('const thing1 = "And im pretty good at it too lol.";')
-                    .typeString('<br>')
-                    .typeString('arr.append(thing0);')
-                    .typeString('<br>')
-                    .typeString('arr.append(thing1);')
-                    .typeString('<br>')
-                    .pauseFor(2000)
-                    .start()
-                }}
-              />
-          </div>
-        </div>
+      <div className='col-span-3 flex justify-start items-center p-24 z-20'>
+        <motion.div whileHover={{scale:1.1, rotate:5}} >
+          <img src="pp.png" alt="avatar" className='w-96 h-96 object-cover bg-gradient-image-pp rounded-lg' />
+        </motion.div>        
+      </div>
+
+      <div className="absolute bottom-0 left-0 w-full overflow-hidden rotate-180">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" className='relative block h-[150px] w-full'>
+          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="fill-main-400"></path>
+        </svg>
       </div>
     </div>
   )

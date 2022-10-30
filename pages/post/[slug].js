@@ -12,11 +12,11 @@ const PostDetails = ({ project }) => {
 
       <div className='h-screen w-full p-16 flex flex-col justify-center text-main-100 '>
         <div className='w-full border-b-2 pb-16 border-main-100'>
-          <h1 className='text-5xl'>{project.title}</h1>
+          <h1 className='text-5xl text-main-100 text-transparent bg-clip-text bg-gradient-image-pp'>{project.title}</h1>
         </div>
         <p className='flex items-end text-xs text-primary my-8'>
           {project.tech.map((proj) => (
-            <span className='border border-primary rounded-xl px-1 py-1 mr-2'>{proj}</span>
+            <span key={proj} className='border border-primary rounded-xl px-1 py-1 mr-2'>{proj}</span>
           ))}
         </p>
       </div>

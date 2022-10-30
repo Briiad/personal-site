@@ -56,3 +56,8 @@ h1 {
 .font-courier-new{
   font-family: 'Courier New', Courier, monospace;
 }
+
+.bg-gradient-image-pp {
+  background-color: #00c9a7;
+  background-image: linear-gradient(57deg, #00c9a7 0%, #aa5dda 54%, #f700b5 100%);
+}

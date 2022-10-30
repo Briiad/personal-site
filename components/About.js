@@ -6,22 +6,34 @@ import { idleSVG } from './animation/motion'
 
 const About = () => {
   return (
-    <section className='w-full h-auto mt-36 bg-main-400'>
-      <div className='py-12 rounded-lg flex justify-center items-center'>
-        <div className='w-full flex items-center justify-around text-primary p-8'>
-          <div className='flex flex-col items-center justify-center rounded-full drop-shadow-lg'>
-            <img src="pp.png" alt="avatar" className='w-48 h-48 rounded-full object-cover bg-primary' />
-            <h2 className='text-5xl my-8'>Hi, I'm <span className='text-secondary font-semibold'>Brian</span>.</h2>
+    <section className='relative w-full h-auto bg-main-400'>
+      <h1 className='absolute font-bold text-9xl top-5 opacity-20 p-36 text-main-100 text-transparent bg-clip-text bg-gradient-image-pp'>My Skills</h1>
+      <div className='w-full h-full grid grid-cols-2 gap-8 p-36'>
+        <div className='col-span-1 flex justify-center'>
+          <div className='w-2/3 text-4xl font-bold text-main-100'>
+            <h2>Frontend Development & Interactive User Interface</h2>
           </div>
-          <p className='w-1/2 ml-12 text-md text-main-100 text-justify'>
-            I started to learn frontend development when i was 15, learning basics like HTML and CSS. Fast forward 5 years later, I am now an Undergraduate Computer Engineering Student and still loves Frontend Development using new stuff like NextJS, React, Framer Motion, and other stuff!
+        </div>
+
+        <div className='col-span-1 flex justify-center'>
+          <p className=' text-main-100 text-justify opacity-75'>
+            I love to build a complex web applications and 
+            a strong passion for building a beautiful and interactive user interfaces
+            while maintaining a high performance and scalability.
+            <br />
+            I seek a lot of inspiration from the latest trends in the web development
+            and also opportunities to cooperate on a project around gorgeous design and
+            clean code. While im still learning and improving my skills, I am always open
+            to new challenges and ready againts any problem that may arise.
+
           </p>
         </div>
       </div>
-      <div className="overflow-hidden w-full flex justify-end items-end z-0 ">
-        <motion.svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" variants={idleSVG} animate="visible">
-          <path d="M649.97 0L550.03 0 599.91 54.12 649.97 0z" className="fill-primary"></path>
-        </motion.svg>
+
+      <div class=" w-full overflow-hidden">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="fill-main-500"></path>
+        </svg>
       </div>
 
     </section>
