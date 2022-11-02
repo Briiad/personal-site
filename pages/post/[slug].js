@@ -8,12 +8,12 @@ const PostDetails = ({ project }) => {
 
   return (
     <React.Fragment>
-      <section className='bg-main-500 p-8 grid grid-cols-2 gap-2'>
+      <section className='bg-main-500 p-4 md:p-8 grid grid-cols-1 md:grid-cols-2 gap-2'>
         <Head>
           <title>{`Project : ${project.title}`}</title>
         </Head>
 
-        <div className='sticky top-0 col-span-1 h-screen w-full p-16 flex flex-col justify-center text-main-100 '>
+        <div className='sticky top-0 col-span-1 h-auto md:h-screen w-full pt-20 md:pt-0 p-8 md:p-16 flex flex-col justify-center text-main-100 bg-main-500 '>
           <div className='w-full border-b-2 pb-8 border-main-100'>
             <h1 className='text-5xl text-main-100 text-transparent bg-clip-text bg-gradient-image-pp'>{project.title}</h1>
           </div>
@@ -24,7 +24,7 @@ const PostDetails = ({ project }) => {
           </p>
         </div>
 
-        <div className='col-span-1 w-full h-full p-16'>
+        <div className='col-span-1 w-full h-full p-2 md:p-16'>
           <div className='flex items-center justify-center'>
             <img src={project.featuredImage.url} alt={project.title} className="w-full h-2/4 object-cover rounded-md shadow-lg" />
           </div>

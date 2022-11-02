@@ -12,7 +12,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <nav className='fixed w-screen h-24 grid grid-cols-5 px-4 py-6 z-50 bg-none transition ease-in-out duration-200'>
+    <nav className='fixed w-screen h-24 grid grid-cols-5 md:px-4 md:py-6 z-50 bg-none transition ease-in-out duration-200'>
       <div className='col-span-3 flex items-center px-6 text-2xl '>
         <h1 className='text-main-100 text-transparent bg-clip-text bg-gradient-image-pp transition ease-in-out duration-20'>
           <Link href='/'>
@@ -27,7 +27,7 @@ const Navbar = () => {
         <HamburgerNav toggle={() => setIsOpen(!isOpen)} isOpen={isOpen} />
         <AnimatePresence>
           {isOpen && 
-            <motion.div className='absolute grid grid-rows-5 gap-2 top-2 h-96 p-8 w-1/4 bg-main-300 text-primary' variants={openNav} initial="hidden" animate="visible" exit="exit">
+            <motion.div className='absolute grid grid-rows-5 gap-2 top-0 right-0 md:top-2 md:right-auto  h-96 p-8 w-3/4 md:w-1/4 bg-main-300 text-primary' variants={openNav} initial="hidden" animate="visible" exit="exit">
               <div className='row-span-1'></div>
               <div className='row-span-3 text-sm'>
                 <p className=''>My Projects</p>

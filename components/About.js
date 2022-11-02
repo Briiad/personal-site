@@ -7,10 +7,10 @@ import { idleSVG } from './animation/motion'
 const About = () => {
   return (
     <section className='relative w-full h-auto bg-main-400'>
-      <h1 className='absolute font-bold text-9xl opacity-20 p-24 top-0 text-main-100 text-transparent bg-clip-text bg-gradient-image-pp'>My Skills</h1>
-      <div className='w-full h-full grid grid-cols-2 gap-8 p-36'>
+      <h1 className='absolute font-bold text-7xl md:text-9xl opacity-20 p-4 md:p-36 top-0 text-main-100 text-transparent bg-clip-text bg-gradient-image-pp'>My Skills</h1>
+      <div className='w-full h-full grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 p-8 md:p-36'>
         <div className='col-span-1 flex justify-center'>
-          <div className='w-2/3 text-4xl font-bold text-main-100'>
+          <div className='w-full pt-20 md:pt-0 md:w-2/3 text-4xl font-bold text-main-100'>
             <h2>Frontend Development & Interactive User Interface</h2>
           </div>
         </div>

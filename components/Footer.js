@@ -3,7 +3,7 @@ import * as Ai from 'react-icons/ai'
 
 const Footer = () => {
   return (
-    <section className='w-full h-screen grid grid-rows-3 gap-4 py-36 px-48'>
+    <section className='w-full h-auto md:h-screen grid grid-rows-3 gap-4 p-12 md:py-36 md:px-48'>
       <div className='row-span-2 grid grid-cols-3 border-b-2 border-primary text-primary'>
         <div className='col-span-1 font-semibold'>
           <p>My Projects</p>
