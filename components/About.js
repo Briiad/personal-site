@@ -7,7 +7,7 @@ import { idleSVG } from './animation/motion'
 const About = () => {
   return (
     <section className='relative w-full h-auto bg-main-400'>
-      <h1 className='absolute font-bold text-9xl top-5 opacity-20 p-36 text-main-100 text-transparent bg-clip-text bg-gradient-image-pp'>My Skills</h1>
+      <h1 className='absolute font-bold text-9xl opacity-20 p-24 top-0 text-main-100 text-transparent bg-clip-text bg-gradient-image-pp'>My Skills</h1>
       <div className='w-full h-full grid grid-cols-2 gap-8 p-36'>
         <div className='col-span-1 flex justify-center'>
           <div className='w-2/3 text-4xl font-bold text-main-100'>
@@ -20,7 +20,7 @@ const About = () => {
             I love to build a complex web applications and 
             a strong passion for building a beautiful and interactive user interfaces
             while maintaining a high performance and scalability.
-            <br />
+            <br /> <br />
             I seek a lot of inspiration from the latest trends in the web development
             and also opportunities to cooperate on a project around gorgeous design and
             clean code. While im still learning and improving my skills, I am always open

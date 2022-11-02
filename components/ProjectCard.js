@@ -5,16 +5,18 @@ import * as Fi from 'react-icons/fi'
 
 const ProjectCard = ({project}) => {
   return (
-    <div className='w-80 h-80 flex flex-col justify-between bg-main-400 rounded-md p-4 overflow-hidden'>
+    <div className='w-80 h-80 flex flex-col justify-between bg-main-400/70 rounded-md p-4 overflow-hidden'>
       <p className='h-1/5 flex justify-between items-center'>
         <Ai.AiFillFolderOpen className='inline-block text-4xl text-primary' />
         <Fi.FiExternalLink className='inline-block text-xl text-main-100' />
       </p>
       <div className='h-3/5 p-4'>
-        <div className='truncate overflow-ellipsis text-sm font-bold text-primary uppercase mb-4'>
-          <Link href={`/post/${project.slug}`}>
-            {project.title}
-          </Link>
+        <div className='truncate overflow-ellipsis text-md font-bold text-primary mb-4'>
+          <h1 className='text-main-100 text-transparent bg-clip-text bg-gradient-image-pp'>
+            <Link href={`/post/${project.slug}`}>
+              {project.title}
+            </Link>
+          </h1>
       </div>
         <p className='text-xs text-main-100 opacity-75'>{project.excerpt}</p>
       </div>

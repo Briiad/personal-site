@@ -14,9 +14,9 @@ const Navbar = () => {
   return (
     <nav className='fixed w-screen h-24 grid grid-cols-5 px-4 py-6 z-50 bg-none transition ease-in-out duration-200'>
       <div className='col-span-3 flex items-center px-6 text-2xl '>
-        <h1 className='text-primary transition ease-in-out duration-20'>
+        <h1 className='text-main-100 text-transparent bg-clip-text bg-gradient-image-pp transition ease-in-out duration-20'>
           <Link href='/'>
-            Logo
+            Brian A.
           </Link>
         </h1>
         

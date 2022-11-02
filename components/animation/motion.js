@@ -16,7 +16,7 @@ export const openNav = {
     x : 0,
     y : 0,
     transition:{
-      duration: 0.5,
+      duration: 0.3,
       ease: 'easeInOut',
     }
   },
@@ -26,7 +26,7 @@ export const openNav = {
     x : 100,
     y : -100,
     transition:{
-      duration: 0.5,
+      duration: 0.3,
       ease: 'easeInOut',
     }
   },
@@ -36,7 +36,7 @@ export const openNav = {
     x : 100,
     y : -100,
     transition:{
-      duration: 0.5,
+      duration: 0.3,
       ease: 'easeInOut',
     }
   },
