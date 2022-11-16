@@ -30,7 +30,7 @@ const PostDetails = ({ project }) => {
           </div>
 
           <div className='w-full h-auto flex items-center justify-center'>
-            <div className='w-full h-auto bg-main-400 rounded-md p-8 my-6 text-main-100'>
+            <div className='w-full h-auto bg-main-400 rounded-md p-8 my-6 text-main-100 leading-relaxed tracking-wide text-justify'>
               <RichText content={project.content.raw.children} />
             </div>
             

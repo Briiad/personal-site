@@ -41,3 +41,31 @@ export const openNav = {
     }
   },
 }
+
+export const fadeIn = {
+  visible: {
+    opacity: 1,
+    y:0,
+    transition: {
+      duration: 1.5,
+      type: 'spring',
+      bounce : 0.4,
+      staggerChildren: 0.5,
+    }
+  },
+  hidden: {
+    opacity: 0,
+    y:100,
+  }
+}
+
+export const fadeinChildren = {
+  visible: { 
+    opacity: 1,
+    y:0,
+  },
+  hidden: {
+    opacity: 0,
+    y:100,
+  }
+}

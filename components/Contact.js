@@ -34,7 +34,7 @@ const Contact = () => {
           <input className='col-span-2 p-4 text-sm outline-none border-b-2 border-primary bg-transparent' type="text" name='name' placeholder='John Doe' required />
           <input className='col-span-3 p-4 text-sm outline-none border-b-2 border-primary bg-transparent' type="text" name='email' placeholder='example@gmail.com' required/>
         </div>
-        <textarea className='w-3/4 p-4 text-sm outline-none border-b-2 border-primary bg-transparent mb-12' type="text" name='message' placeholder='Hello, we have a system for this product tat we are currently make at X Company. How soon can you join us to have a little discussion?' required/>
+        <textarea className='w-full md:w-3/4 p-4 text-sm outline-none border-b-2 border-primary bg-transparent mb-12' type="text" name='message' placeholder='Hello, we have a system for this product tat we are currently make at X Company. How soon can you join us to have a little discussion?' required/>
         <button type="submit" value='send' className='border border-primary py-4 px-32 text-primary uppercase text-sm font-semibold tracking-wider'>
           Blast off!
         </button>
