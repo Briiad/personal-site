@@ -33,8 +33,8 @@ const Navbar = () => {
               <div className='row-span-1 text-sm'>My Shelf</div>
               <div className='row-span-1 text-sm'>My Resume</div>
               <div className='row-span-1 flex justify-around border-t-2 border-primary items-center text-2xl'>
-                <p className=''><Ai.AiFillGithub /></p>
-                <p className=''><Ai.AiOutlineLinkedin/></p>
+                <Link href='https://github.com/Briiad'><p className=''><Ai.AiFillGithub /></p></Link>
+                <Link href='https://www.linkedin.com/in/brian-aditya-dharmatirta/'><p className=''><Ai.AiOutlineLinkedin/></p></Link>
                 <p className=''><Ai.AiOutlineTwitter /></p>
               </div>
             </motion.div>
