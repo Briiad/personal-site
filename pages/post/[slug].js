@@ -56,6 +56,6 @@ export async function getStaticPaths() {
 
   return {
     paths: projects.map(({ node: {slug}}) => ({params: {slug}})),
-    fallback: true,
+    fallback: 'blocking',
   }
 }
