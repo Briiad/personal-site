@@ -42,6 +42,40 @@ export const openNav = {
   },
 }
 
+export const fadeInBg = {
+  visible: {
+    opacity: 0.05,
+    y:0,
+    zIndex: 1,
+    transition: {
+      duration: 0.5,
+      type: 'spring',
+      bounce : 0.4,
+    }
+  },
+  hidden: {
+    opacity: 0,
+    y:100,
+  }
+}
+
+export const fadeInImg = {
+  visible: {
+    opacity: 1,
+    x:0,
+    transition: {
+      delay: 1,
+      duration: 1.5,
+      type: 'spring',
+      bounce : 0.4,
+    }
+  },
+  hidden: {
+    opacity: 0,
+    x:100,
+  }
+}
+
 export const fadeIn = {
   visible: {
     opacity: 1,

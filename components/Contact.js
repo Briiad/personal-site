@@ -24,7 +24,7 @@ const Contact = () => {
   }
 
   return (
-    <section className='w-full h-auto md:h-screen flex flex-col items-center bg-main-400 p-10 md:py-24 md:px-52'>
+    <section className='w-full h-auto md:h-screen flex flex-col items-center bg-main-500 p-10 md:py-24 md:px-52'>
       <div className='w-full h-full md:h-2/5 flex flex-col items-center text-center'>
         <h1 className='text-3xl md:text-5xl font-semibold text-primary mb-4 tracking-wide'>Want to Know me More?</h1>
         <p className='w-full md:w-1/2 text-base md:text-lg text-main-100 opacity-75'>Have some questions or proposals, or just wanna know me? <span className='font-bold italic text-primary'>Go for it.</span></p>

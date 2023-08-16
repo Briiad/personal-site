@@ -14,8 +14,8 @@ const HamburgerNav = ({toggle, isOpen}) => {
           animate={isOpen ? "open" : "closed"}
           initial={false}
           variants={{
-            closed: {d: "M 2 2.5 L 48 2.5", stroke: "#F700B5"},
-            open: {d: "M 3 16.5 L 17 2.5", stroke: "#00C9A7"}
+            closed: {d: "M 2 2.5 L 48 2.5", stroke: "#aa5dda"},
+            open: {d: "M 3 16.5 L 17 2.5", stroke: "#aa5dda"}
           }}
           transition={transition}
         />
@@ -42,8 +42,8 @@ const HamburgerNav = ({toggle, isOpen}) => {
           animate={isOpen ? "open" : "closed"}
           initial={false}
           variants={{
-            closed: {d: "M 14 16.346 L 48 16.346", stroke: "#F700B5"},
-            open: {d: "M 3 2.5 L 17 16.346", stroke: "#00C9A7"}
+            closed: {d: "M 14 16.346 L 48 16.346", stroke: "#aa5dda"},
+            open: {d: "M 3 2.5 L 17 16.346", stroke: "#aa5dda"}
           }}
           transition={transition}
         />
